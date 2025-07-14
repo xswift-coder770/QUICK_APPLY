@@ -11,6 +11,9 @@ import AIRephrase from "./pages/AIRephrase";
 import AboutUs from "./pages/AboutUs"; 
  
 
+
+
+
 function App() {
   return (
     <Router>
