@@ -5,7 +5,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import LoginPage from "./pages/LoginPage";
-import Dashboard from "./pages/DashBoard";
+import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile"; 
 import AIRephrase from "./pages/AIRephrase";
 import AboutUs from "./pages/AboutUs"; 
