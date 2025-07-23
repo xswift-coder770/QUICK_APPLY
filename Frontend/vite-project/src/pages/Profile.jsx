@@ -40,7 +40,7 @@ const Profile = () => {
     if (!uid) return;
     const fetchUserData = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/userdata/${uid}`);
+        const res = await fetch('https://quick-apply.onrender.com/api/userdata/${uid}`);
         const data = await res.json();
         setUserData(data);
       } catch (err) {
