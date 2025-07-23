@@ -20,8 +20,9 @@ const LoginPage = () => {
     e.preventDefault();
 
     const url = isRegistering
-      ? "http://localhost:5000/api/auth/register"
-      : "http://localhost:5000/api/auth/login";
+      ? "https://quick-apply.onrender.com/api/auth/register"
+      : "https://quick-apply.onrender.com/api/auth/login";
+
 
     const payload = isRegistering
       ? {
@@ -63,7 +64,7 @@ const handleGoogleSignIn = async () => {
     const result = await signInWithPopup(auth, provider);
     const user = result.user;
 
-    const res = await fetch("http://localhost:5000/api/auth/google-login", {
+    const res = await fetch("https://quick-apply.onrender.com/api/auth/google-login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
