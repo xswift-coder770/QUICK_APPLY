@@ -41,7 +41,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/api/userdata/${user.uid}`)
+      fetch(`https://quick-apply.onrender.com/api/userdata/${user.uid}`)
         .then((res) => res.json())
         .then((data) => {
           setGoogleDriveLinks(
@@ -67,7 +67,7 @@ const Dashboard = () => {
   const saveDataToBackend = () => {
     if (!user) return;
 
-    fetch("http://localhost:5000/api/userdata/save", {
+    fetch("https://quick-apply.onrender.com/api/userdata/save", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
